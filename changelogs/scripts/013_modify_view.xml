@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+            http://www.liquibase.org/xml/ns/dbchangelog
+            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="13" author="parag">
+        <sql><![CDATA[
+            CREATE OR ALTER VIEW vw_employee_basic AS
+            SELECT id, name, email, phone
+            FROM employee;
+        ]]></sql>
+
+        <rollback><![CDATA[
+            CREATE OR ALTER VIEW vw_employee_basic AS
+            SELECT id, name, email
+            FROM employee;
+        ]]></rollback>
+    </changeSet>
+
+</databaseChangeLog>
+

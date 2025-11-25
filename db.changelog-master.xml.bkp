@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+      http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <include file="changelogs/scripts/001_initial_schema.sql" relativeToChangelogFile="false"/>
+    <include file="changelogs/scripts/002_proc_update.sql" relativeToChangelogFile="false"/>
+    <include file="changelogs/scripts/003_new_feature.sql" relativeToChangelogFile="false"/>  
+    <include file="changelogs/scripts/004_add_company_name.sql" relativeToChangelogFile="false"/> 
+<!--    <include file="changelogs/scripts/005_invalid_sql.sql" relativeToChangelogFile="false"/>  -->
+<!--    <include file="changelogs/scripts/006_bad_rollback.sql" relativeToChangelogFile="false"/>  -->
+<!--    <include file="changelogs/scripts/007_fk_failure.sql" relativeToChangelogFile="false"/>   -->
+<!--    <include file="changelogs/scripts/008_invalid_proc.sql" relativeToChangelogFile="false"/>     -->
+<!--    <include file="changelogs/scripts/009_missing_file.sql"/>  -->
+<!--    <include file="changelogs/scripts/001_initial_schema.sql">  -->
+<!--    <include file="changelogs/scripts/009_duplicate_changeset.sql" relativeToChangelogFile="false"/>  -->	
+    <include file="changelogs/scripts/010_create_procedure.sql" relativeToChangelogFile="false"/>
+<!--    <include file="changelogs/scripts/011_modify_procedure.sql" relativeToChangelogFile="false"/>  -->
+    <include file="changelogs/scripts/011_modify_procedure.xml" relativeToChangelogFile="false"/>
+    <include file="changelogs/scripts/012_create_view.sql" relativeToChangelogFile="false"/>
+<!--    <include file="changelogs/scripts/013_modify_view.sql" relativeToChangelogFile="false"/>  -->
+    <include file="changelogs/scripts/013_modify_view.xml" relativeToChangelogFile="false"/>
+
+</databaseChangeLog>
+
