@@ -1,7 +1,7 @@
 --liquibase formatted sql
 
 --changeset parag:2 structure labels:core context:CR-010
---comment: Updated parag
+--comment: Updated by parag
 CREATE OR ALTER PROCEDURE update_employee_email
     @id INT,
     @newEmail VARCHAR(100)

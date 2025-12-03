@@ -1,0 +1,20 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="ubuntu (generated)" id="1764162505691-1">
+        <createTable tableName="employee">
+            <column computed="false" name="id" type="int">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__employee__3213E83F40898AB6"/>
+            </column>
+            <column computed="false" name="name" type="varchar(100)"/>
+            <column computed="false" defaultValueComputed="'true'" defaultValueConstraintName="DF__employee__is_act__36B12243" name="is_active" type="bit"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ubuntu (generated)" id="1764162505691-2">
+        <createTable tableName="department">
+            <column computed="false" name="id" type="int">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__departme__3213E83FA8DA3F3E"/>
+            </column>
+            <column computed="false" name="dept_name" type="varchar(100)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

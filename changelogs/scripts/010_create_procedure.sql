@@ -1,7 +1,7 @@
 --liquibase formatted sql
 
 --changeset parag:10 structure labels:core context:CR-010
---comment: Updated parag
+--comment: Updated by parag
 CREATE OR ALTER PROCEDURE get_employee_by_id
     @empId INT
 AS

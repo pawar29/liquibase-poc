@@ -7,7 +7,7 @@
             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 
 <changeSet id="13" author="parag" labels="core" context="CR-010" >
-	<comment>Updated parag</comment>
+	<comment>Updated by parag</comment>
 
         <sql><![CDATA[
             CREATE OR ALTER VIEW vw_employee_basic AS
